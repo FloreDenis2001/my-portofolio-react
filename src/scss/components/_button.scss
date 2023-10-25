@@ -1,0 +1,44 @@
+.btn{
+    
+    padding: 1rem;
+    background-color: $color-black;
+    font-family: $font-family-three;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $color-first;
+    border-radius: 1rem;
+    border: 1px solid $color-first;
+    transition: 0.5s;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0 1rem $color-first,0 0 1.5rem $color-second;
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+ 
+    &__primary{
+        background-color: $color-first;
+        color: $color-black;
+        border:none;
+
+   
+    
+    }
+
+}
+
+.btn__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 6rem;
+    width: 30rem;
+    margin-block: 1rem;
+    
+}

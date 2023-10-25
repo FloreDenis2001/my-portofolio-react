@@ -1,0 +1,148 @@
+#home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    padding-block: 1rem;
+}
+
+.nav {
+
+    &__bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        min-width: 30%;
+        max-width: 50%;
+        height: 100%;
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            &__item {
+                list-style: none;
+            }
+        }
+
+
+    }
+
+    &__link {
+        position: relative;
+        color: rgba(255, 255, 255, 0.61);
+        font-size: 2rem;
+        text-decoration: none;
+        padding-block: 1rem;
+        margin-left: 1.5rem;
+        letter-spacing: 0.1rem;
+        font-weight: 500;
+        padding: 0 1rem;
+    }
+
+    &__link:before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0.3rem;
+        left: -0.2rem;
+        bottom: -0.5rem;
+        background-color: $color-first;
+        transition: 0.5s;
+    }
+
+    &__link:hover::before {
+        width: 100%;
+    }
+
+    &__link:hover {
+        color: $color-white;
+    }
+
+
+}
+
+.logo-container {
+    width: 12rem;
+    height: 80%;
+}
+
+.logo-container img {
+    width: 100%;
+    min-height: 100%;
+}
+
+.navigation {
+    &__mobile {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: fixed;
+        width: 100%;
+        max-width: 40rem;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 100;
+        height: 6rem;
+
+        background-color: transparent;
+
+      
+        &__list {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            list-style: none;
+            border: 2px solid $color-first;
+            border-radius: 10rem;
+            background-color: $color-black;
+            margin-bottom: 2rem;
+            min-height: 6rem;
+
+        }
+
+        &__link {
+            color: $color-white;
+            font-size: 2.2rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border-radius: 50%;
+           
+            padding: 0.6rem 0.6rem 0 0.6rem;
+
+            &__active {
+                font-size: 2.2rem;
+                color: $color-first;
+                border-radius: 50%;
+                padding: 0.7rem 0.7rem 0 0.7rem;
+                background-color: rgba(36, 36, 36, 0.877);
+            }
+
+            &:hover{
+                padding: 0.7rem 0.7rem 0 0.7rem;
+                background-color: rgba(36, 36, 36, 0.877);
+            }
+
+
+
+        }
+
+        &__link svg {
+
+            &:hover {
+                color: $color-first;
+                transform: scale(1.1)
+            }
+        }
+
+
+    }
+}

@@ -1,38 +1,283 @@
-.App {
-  text-align: center;
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:ital,wght@0,300;0,500;1,500;1,900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  background: #131212;
+  background-image: url(../src/assets/bg-texture.png);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  max-height: 70%;
+}
+
+h5, h4 {
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-block: 1rem;
+}
+
+.nav__bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 30%;
+  max-width: 50%;
+  height: 100%;
+}
+.nav__bar__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav__bar__list__item {
+  list-style: none;
+}
+.nav__link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.61);
+  font-size: 2rem;
+  text-decoration: none;
+  padding-block: 1rem;
+  margin-left: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+.nav__link:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0.3rem;
+  left: -0.2rem;
+  bottom: -0.5rem;
+  background-color: #2ee28e;
+  transition: 0.5s;
+}
+.nav__link:hover::before {
+  width: 100%;
+}
+.nav__link:hover {
+  color: #ffffff;
+}
+
+.logo-container {
+  width: 12rem;
+  height: 80%;
+}
+
+.logo-container img {
+  width: 100%;
+  min-height: 100%;
+}
+
+.navigation__mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  max-width: 40rem;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 100;
+  height: 6rem;
+  background-color: transparent;
+}
+.navigation__mobile__list {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  border: 2px solid #2ee28e;
+  border-radius: 10rem;
+  background-color: #131212;
+  margin-bottom: 2rem;
+  min-height: 6rem;
+}
+.navigation__mobile__link {
+  color: #ffffff;
+  font-size: 2.2rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-radius: 50%;
+  padding: 0.6rem 0.6rem 0 0.6rem;
+}
+.navigation__mobile__link__active {
+  font-size: 2.2rem;
+  color: #2ee28e;
+  border-radius: 50%;
+  padding: 0.7rem 0.7rem 0 0.7rem;
+  background-color: rgba(36, 36, 36, 0.877);
+}
+.navigation__mobile__link:hover {
+  padding: 0.7rem 0.7rem 0 0.7rem;
+  background-color: rgba(36, 36, 36, 0.877);
+}
+.navigation__mobile__link svg:hover {
+  color: #2ee28e;
+  transform: scale(1.1);
+}
+
+.btn {
+  padding: 1rem;
+  background-color: #131212;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2ee28e;
+  border-radius: 1rem;
+  border: 1px solid #2ee28e;
+  transition: 0.5s;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 1rem #2ee28e, 0 0 1.5rem #56f3b7;
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn__primary {
+  background-color: #2ee28e;
+  color: #131212;
+  border: none;
+}
+
+.btn__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 6rem;
+  width: 30rem;
+  margin-block: 1rem;
+}
+
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  height: 80vh;
+  overflow: hidden;
+}
+.hero__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
   color: white;
+  position: relative;
+  min-width: 60%;
+}
+.hero__header h5 {
+  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.hero__header h4 {
+  font-size: 1.4rem;
+}
+.hero__header h1 {
+  font-size: 3rem;
+}
+.hero__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  gap: 0.8rem;
+  background: transparent;
+}
+.hero__social a {
+  background: transparent;
+  padding: 0.5rem;
+  color: rgba(86, 243, 183, 0.4784313725);
+  font-size: 3rem;
+}
+.hero__social a:hover {
+  color: #2ee28e;
+}
+.hero__me {
+  background: linear-gradient(#131212, #2ee28e);
+  overflow: hidden;
+  width: 30rem;
+  height: 40rem;
+  border-radius: 12rem 12rem 0 0;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.hero__me img {
+  position: absolute;
+  left: -2.5rem;
+  bottom: 0rem;
+  min-width: 100%;
+  min-height: 90%;
+}
+.hero__scrollDown {
+  text-decoration: none;
+  color: #2ee28e;
+  position: absolute;
+  right: 0;
+  bottom: 7rem;
+  transform: rotate(90deg);
+  font-size: 2rem;
+  font-weight: 300;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */

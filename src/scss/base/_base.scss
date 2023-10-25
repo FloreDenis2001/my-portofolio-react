@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    background: $color-black;
+    background-image: url(../src/assets/bg-texture.png);
+}
+
+
+body {
+    box-sizing: border-box;
+    // background: $color-black;
+    // background-image: url(../src/assets/bg-texture.png);
+    font-family: $font-family-one;
+    font-weight: 400;
+    overflow-x: hidden;
+    height: auto;
+}
+
+img {
+    max-height: 70%;
+}
+
+
+ h5,h4 {
+    font-size: 1.4rem;
+}
+
+ 
+
+h1 {
+    font-size: 3rem;
+}
