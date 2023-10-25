@@ -14,7 +14,17 @@ const About = () => {
                 </div>
 
                 <div className="about__content">
-                    
+                    <div className="about__cards">
+                        <h5>Experience</h5>
+                        <small>2+ Years Working</small>
+                    </div>
+                    <div className="about__cards">
+                    <h5>Projects</h5>
+                        <small>2+ Years Working</small>
+                    </div>
+                    <div className="about__cards">
+
+                    </div>
                 </div>
 
             </div>
