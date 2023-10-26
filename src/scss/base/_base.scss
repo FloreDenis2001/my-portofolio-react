@@ -17,12 +17,11 @@ html {
 
 body {
     box-sizing: border-box;
-    // background: $color-black;
-    // background-image: url(../src/assets/bg-texture.png);
     font-family: $font-family-one;
     font-weight: 400;
     overflow-x: hidden;
     height: auto;
+    color: $color-white;
 }
 
 img {

@@ -1,0 +1,85 @@
+.experience {
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        place-items: center;
+        padding-block: 5rem;
+        max-width: 90%;
+        min-height: 40rem;
+
+    }
+
+    &__frontend,
+    &__backend {
+        background-color: transparent;
+        border: 2px solid $color-first;
+
+        padding: 2.4rem 5rem;
+        border-radius: 4rem;
+        min-height: 30rem;
+        min-width: 50rem;
+
+      
+
+        h3 {
+            text-align: center;
+            font-size: 1.8rem;
+            letter-spacing: 0.3rem;
+            padding-bottom: 2rem;
+            color: $color-first;
+
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: flex-start;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+
+        h4 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        small {
+
+            font-size: 1.2rem;
+        }
+    }
+
+
+    &__icon {
+        font-size: 2rem;
+        color: $color-first;
+    }
+
+
+}
+
+#experience {
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    h5 {
+        color: rgba(131, 131, 131, 0.699);
+    }
+
+    h1 {
+        color: $color-white;
+    }
+}

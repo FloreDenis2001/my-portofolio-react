@@ -1,0 +1,134 @@
+.contact {
+
+
+    &__subtitle {
+        color: rgba(131, 131, 131, 0.699);
+    }
+
+    &__container {
+        margin-top: 3rem;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 1%;
+        width: 70%;
+    }
+
+    &__content {
+        display: grid;
+        place-items: center;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    &__info {
+        max-width: 50%;
+    }
+
+
+    &__card {
+        margin-top: 2rem;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        text-align: center;
+        border: 1px solid $color-first;
+        border-radius: 1rem;
+        padding-block: 2rem;
+        padding-inline: 2rem;
+        background-color: rgba($color-first, 0.699);
+
+
+        &:hover {
+            border: 1px solid $color-first;
+            background-color: transparent;
+        }
+
+        &__title {
+            font-size: 2.5rem;
+            padding-block: 0.4rem;
+        }
+
+        &__data {
+            font-size: 1.4rem;
+        }
+
+
+
+    }
+
+    &__icon {
+        font-size: 4rem;
+        color: $color-white;
+        margin-bottom: 1rem;
+    }
+
+
+    &__form {
+        display: grid;
+        place-items: start;
+        gap: 1.7rem;
+        width: 80%;
+        padding-block: 5rem;
+
+        &__input {
+            width: 90%;
+            border-radius: 1rem;
+            background-color: transparent;
+            border: 2px solid $color-first;
+            height: 7rem;
+            padding-left: 2rem;
+            color: $color-white;
+            font-family: $font-family-three;
+
+            &::placeholder {
+                color: $color-first;
+                
+            }
+
+            &:focus {
+                padding-left: 2rem;
+                background-color: transparent;
+                border: none;
+                outline: 2px solid $color-first;
+            }
+        }
+
+        &__textarea{
+            width: 90%;
+            border-radius: 1rem;
+            background-color: transparent;
+            border: 2px solid $color-first;
+            padding: 2rem 0 0 2rem;
+            font-family: $font-family-three;
+            resize: none;
+            color: $color-white;
+            height: 25rem;
+
+            &::placeholder {
+                color: $color-first;
+                
+            }
+
+            &:focus {
+                padding-left: 2rem;
+                background-color: transparent;
+                border: none;
+                outline: 2px solid $color-first;
+            }
+        }
+
+
+    }
+
+
+}
+
+#contact {
+    display: grid;
+    place-items: center;
+    padding-bottom: 10rem;
+}

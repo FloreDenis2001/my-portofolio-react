@@ -23,7 +23,7 @@ const Hero = () => {
                 <ButtonContainer />
 
 
-          <a href="" className="hero__scrollDown">Scroll Down</a>
+          <a href="#contact" className="hero__scrollDown">Scroll Down</a>
             </div>
 
         </aside>

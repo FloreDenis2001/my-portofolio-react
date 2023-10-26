@@ -15,11 +15,11 @@ const NavigationBar = () => {
         </li>
 
         <li>
-            <a href="#skills" className="navigation__mobile__link"><BiSolidBookBookmark/></a>
+            <a href="#experience" className="navigation__mobile__link"><BiSolidBookBookmark/></a>
         </li>
 
         <li>
-            <a href="#project" className="navigation__mobile__link"><LuHeartHandshake/> </a>
+            <a href="#projects" className="navigation__mobile__link"><LuHeartHandshake/> </a>
         </li>
 
         <li>

@@ -1,0 +1,115 @@
+#about {
+    padding-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h5 {
+        color: rgba(131, 131, 131, 0.699);
+    }
+
+    h1 {
+        color: $color-white;
+    }
+}
+
+.about {
+
+    &__container {
+        display: grid;
+        grid-template-columns: 35% 50%;
+        gap: 15%;
+        margin-top: 6rem;
+        max-width: 90%;
+        min-height: 40rem;
+
+    }
+
+
+    &__me {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background: linear-gradient(45deg, $color-first, transparent);
+        border-radius: 5rem;
+        display: grid;
+        place-items: center;
+        max-width: 50rem;
+        max-height: 50rem;
+
+        &__img {
+            border-radius: 5rem;
+            transform: rotate(25deg);
+            transition: all 0.2s;
+            overflow: hidden;
+
+            &:hover {
+                transform: rotate(0);
+                box-shadow: 0 0 1rem $color-first, 0 0 1.5rem $color-second;
+
+            }
+        }
+
+
+        &__img img {
+            border-radius: 5rem;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+        max-width: 53.1rem;
+        max-height: 40rem;
+       
+    }
+
+    &__card {
+        cursor: pointer;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        place-items: center;
+        background-color:rgba($color-first, 0.8);
+        color: $color-white;
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: 1rem;
+        padding-block: 2rem;
+
+        &:hover {
+            border: 1px solid $color-first;
+            background-color: transparent;           
+        }
+
+        p {
+            font-size: 2.5rem;
+        }
+
+        small {
+            font-size: 1.4rem;
+        }
+
+
+
+    }
+
+    &__icon {
+        font-size: 2.5rem;
+        color: $color-white;
+        margin-bottom: 1rem;
+    }
+
+    &__describe {
+        max-width: 53.1rem;
+        margin: 2rem 0 2.7rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+    }
+
+
+
+}

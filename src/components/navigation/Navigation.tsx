@@ -19,11 +19,11 @@ const Navigation = () => {
                     </li>
 
                     <li className='nav__bar__list__item'>
-                        <a href="#skills" className="nav__link " >Skills</a>
+                        <a href="#experience" className="nav__link " >Skills</a>
                     </li>
 
                     <li className='nav__bar__list__item'>
-                        <a href="#project" className="nav__link " >Project</a>
+                        <a href="#projects" className="nav__link " >Project</a>
                     </li>
 
                     <li className='nav__bar__list__item'>

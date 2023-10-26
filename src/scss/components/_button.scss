@@ -1,5 +1,5 @@
 .btn{
-    
+    cursor: pointer;
     padding: 1rem;
     background-color: $color-black;
     font-family: $font-family-three;
@@ -30,6 +30,22 @@
     
     }
 
+    &__icon{
+        margin-right: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    &__text{
+        padding-block: 1rem;
+        color: $color-white;
+        text-decoration: none;
+        font-size: 1.3rem;
+        &:hover{
+            transform: scale(1.2);
+            color: $color-first;
+        }
+    }
+
 }
 
 .btn__container{
@@ -41,4 +57,39 @@
     width: 30rem;
     margin-block: 1rem;
     
+}
+
+.btn-card{
+    cursor: pointer;
+    background-color: $color-black;
+    font-family: $font-family-three;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $color-first;
+    border-radius: 1rem;
+    border: 1px solid $color-first;
+    transition: 0.5s;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 8rem;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0 1rem $color-first,0 0 1.5rem $color-second;
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &__cardprimary{
+        background-color: $color-first;
+        color: $color-black;
+        border:none;
+    }
 }
