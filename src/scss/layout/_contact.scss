@@ -88,6 +88,11 @@
             max-width:18rem;
 
         }
+        @include respond(phone){
+         
+            width: 100%;
+
+        }
        
 
 
@@ -138,7 +143,7 @@
 
         @include respond(tab-land){
           place-items: center;
-
+          width: 80%;
         }
 
         &__input {

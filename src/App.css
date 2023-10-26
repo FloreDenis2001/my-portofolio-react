@@ -819,6 +819,11 @@ h1 {
     max-width: 18rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .contact__card {
+    width: 100%;
+  }
+}
 .contact__card:hover {
   border: 1px solid #2ee28e;
   background-color: transparent;
@@ -861,6 +866,7 @@ h1 {
 @media only screen and (max-width: 75em) {
   .contact__form {
     place-items: center;
+    width: 80%;
   }
 }
 .contact__form__input {
