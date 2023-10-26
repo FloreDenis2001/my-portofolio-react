@@ -17,6 +17,13 @@
         color: white;
         position: relative;
         min-width: 60%;
+
+        @include respond(tab-port){
+            min-width: 90%;
+        }
+        @include respond(phone){
+            min-width: 95%;
+        }
     }
 
     &__header h5 {
@@ -24,6 +31,10 @@
      
         font-size: 1.6rem;
         font-weight: 300;
+
+        @include respond(phone){
+            font-size: 1rem;
+        }
     }
 
     &__header h4 {
@@ -46,6 +57,12 @@
         bottom: 1rem;
         gap: 0.8rem;
         background: transparent;
+
+        @include respond(phone){
+            left: 0rem;
+            bottom: 6.5rem;
+            gap: 0.3rem;
+         }
     }
 
     &__social a {
@@ -57,6 +74,10 @@
         &:hover{
            color: $color-first; 
         }
+        @include respond(phone){
+            font-size: 2.2rem;
+         }
+      
     }
 
     &__me{
@@ -67,6 +88,11 @@
         border-radius: 12rem  12rem 0 0;
         position: relative;
         margin-bottom: 2rem;
+
+        @include respond(phone){
+            width:25rem;
+        height: 35rem;
+        }
 
     }
 
@@ -87,5 +113,9 @@
         transform: rotate(90deg);
         font-size: 2rem;
         font-weight: 300;
+
+        @include respond(phone){
+            display: none;
+        }
     }
 }

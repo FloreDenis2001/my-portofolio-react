@@ -16,6 +16,17 @@
 
 .about {
 
+    &__content{
+        @include respond (phone){
+            width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding-block: 2rem;
+        }
+    }
+
     &__container {
         display: grid;
         grid-template-columns: 35% 50%;
@@ -23,6 +34,13 @@
         margin-top: 6rem;
         max-width: 90%;
         min-height: 40rem;
+
+        @include respond (tab-port){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
     }
 
@@ -37,6 +55,18 @@
         max-width: 50rem;
         max-height: 50rem;
 
+
+        @include respond (tab-port){
+            margin-bottom: 5rem;
+            width: 50%;
+            height: 50%;
+        }
+        @include respond (phone){
+            margin-bottom: 5rem;
+            width: 60%;
+            height: 60%;
+        }
+
         &__img {
             border-radius: 5rem;
             transform: rotate(25deg);
@@ -48,6 +78,11 @@
                 box-shadow: 0 0 1rem $color-first, 0 0 1.5rem $color-second;
 
             }
+
+           
+
+           
+    
         }
 
 
@@ -55,6 +90,9 @@
             border-radius: 5rem;
             width: 100%;
             height: 100%;
+
+          
+            
         }
     }
 
@@ -64,6 +102,13 @@
         gap: 1.5rem;
         max-width: 53.1rem;
         max-height: 40rem;
+
+        @include respond (phone){
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+        }
        
     }
 
@@ -79,6 +124,11 @@
         border-radius: 1rem;
         padding-block: 2rem;
 
+        @include respond (phone){
+           min-width: 15rem;
+
+        }
+       
         &:hover {
             border: 1px solid $color-first;
             background-color: transparent;           
@@ -86,10 +136,17 @@
 
         p {
             font-size: 2.5rem;
+
+            @include respond(tab-land){
+                font-size: 2rem;
+            }
         }
 
         small {
             font-size: 1.4rem;
+            @include respond(tab-land){
+                font-size: 1.2rem;
+            }
         }
 
 
@@ -100,6 +157,11 @@
         font-size: 2.5rem;
         color: $color-white;
         margin-bottom: 1rem;
+
+        @include respond(tab-land){
+            margin-bottom: 0.7rem;
+            font-size: 2.2rem;
+        }
     }
 
     &__describe {
@@ -108,6 +170,11 @@
         font-size: 1.4rem;
         font-weight: 400;
         letter-spacing: 0.1rem;
+
+        @include respond (phone){
+            margin-top: 3rem;
+            text-align: center;
+        }
     }
 
 

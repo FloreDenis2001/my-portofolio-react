@@ -1,8 +1,8 @@
-import React, { useRef } from 'react'
-import { BiArrowToLeft, BiArrowToRight, BiLogoGmail, BiLogoInstagram, BiLogoWhatsapp, BiSolidArrowToRight } from 'react-icons/bi'
-import { AiOutlineArrowRight } from 'react-icons/ai'
+import React from 'react'
+import { BiLogoGmail, BiLogoInstagram, BiLogoWhatsapp } from 'react-icons/bi'
 
 const Contact = () => {
+
 
     return (
         <section id='contact'>
@@ -10,7 +10,7 @@ const Contact = () => {
             <h1>Contact Me</h1>
 
             <div className="contact__container">
-                <div className="contact__content">
+                <div className="contact__content ">
 
 
                     <div className="contact__info">

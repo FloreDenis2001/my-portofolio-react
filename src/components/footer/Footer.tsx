@@ -19,7 +19,7 @@ const Footer = () => {
             </ul>
 
             <p className="footer__copyright">
-                Design by <a href="#" className="footer__link"> Flore Denis</a>   
+                Design by <a href="#home" className="footer__link"> Flore Denis</a>   
             </p>
         </div>
     </footer>

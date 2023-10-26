@@ -60,7 +60,13 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding-block: 1rem;
+  padding-block: 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  #home {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .nav__bar {
@@ -71,6 +77,16 @@ h1 {
   min-width: 30%;
   max-width: 50%;
   height: 100%;
+}
+@media only screen and (max-width: 56.25em) {
+  .nav__bar {
+    min-width: 100%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .nav__bar {
+    display: none;
+  }
 }
 .nav__bar__list {
   display: flex;
@@ -92,6 +108,16 @@ h1 {
   font-weight: 500;
   padding: 0 1rem;
 }
+@media only screen and (max-width: 75em) {
+  .nav__link {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .nav__link {
+    font-size: 1.6rem;
+  }
+}
 .nav__link:before {
   position: absolute;
   content: "";
@@ -112,6 +138,17 @@ h1 {
 .logo-container {
   width: 12rem;
   height: 80%;
+}
+@media only screen and (max-width: 75em) {
+  .logo-container {
+    width: 10rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .logo-container {
+    padding-block: 3rem;
+    width: 10rem;
+  }
 }
 
 .logo-container img {
@@ -270,10 +307,25 @@ h1 {
   position: relative;
   min-width: 60%;
 }
+@media only screen and (max-width: 56.25em) {
+  .hero__header {
+    min-width: 90%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .hero__header {
+    min-width: 95%;
+  }
+}
 .hero__header h5 {
   margin-bottom: 0.4rem;
   font-size: 1.6rem;
   font-weight: 300;
+}
+@media only screen and (max-width: 37.5em) {
+  .hero__header h5 {
+    font-size: 1rem;
+  }
 }
 .hero__header h4 {
   font-size: 1.6rem;
@@ -293,6 +345,13 @@ h1 {
   gap: 0.8rem;
   background: transparent;
 }
+@media only screen and (max-width: 37.5em) {
+  .hero__social {
+    left: 0rem;
+    bottom: 6.5rem;
+    gap: 0.3rem;
+  }
+}
 .hero__social a {
   background: transparent;
   padding: 0.5rem;
@@ -302,6 +361,11 @@ h1 {
 .hero__social a:hover {
   color: #2ee28e;
 }
+@media only screen and (max-width: 37.5em) {
+  .hero__social a {
+    font-size: 2.2rem;
+  }
+}
 .hero__me {
   background: linear-gradient(#121312, #2ee28e);
   overflow: hidden;
@@ -310,6 +374,12 @@ h1 {
   border-radius: 12rem 12rem 0 0;
   position: relative;
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .hero__me {
+    width: 25rem;
+    height: 35rem;
+  }
 }
 .hero__me img {
   position: absolute;
@@ -328,6 +398,11 @@ h1 {
   font-size: 2rem;
   font-weight: 300;
 }
+@media only screen and (max-width: 37.5em) {
+  .hero__scrollDown {
+    display: none;
+  }
+}
 
 #about {
   padding-top: 2vh;
@@ -343,6 +418,16 @@ h1 {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .about__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2rem;
+  }
+}
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
@@ -350,6 +435,14 @@ h1 {
   margin-top: 6rem;
   max-width: 90%;
   min-height: 40rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .about__me {
   width: 100%;
@@ -360,6 +453,20 @@ h1 {
   place-items: center;
   max-width: 50rem;
   max-height: 50rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .about__me {
+    margin-bottom: 5rem;
+    width: 50%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .about__me {
+    margin-bottom: 5rem;
+    width: 60%;
+    height: 60%;
+  }
 }
 .about__me__img {
   border-radius: 5rem;
@@ -383,6 +490,14 @@ h1 {
   max-width: 53.1rem;
   max-height: 40rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .about__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .about__card {
   cursor: pointer;
   display: grid;
@@ -395,6 +510,11 @@ h1 {
   border-radius: 1rem;
   padding-block: 2rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .about__card {
+    min-width: 15rem;
+  }
+}
 .about__card:hover {
   border: 1px solid #2ee28e;
   background-color: transparent;
@@ -402,13 +522,29 @@ h1 {
 .about__card p {
   font-size: 2.5rem;
 }
+@media only screen and (max-width: 75em) {
+  .about__card p {
+    font-size: 2rem;
+  }
+}
 .about__card small {
   font-size: 1.4rem;
+}
+@media only screen and (max-width: 75em) {
+  .about__card small {
+    font-size: 1.2rem;
+  }
 }
 .about__icon {
   font-size: 2.5rem;
   color: #ffffff;
   margin-bottom: 1rem;
+}
+@media only screen and (max-width: 75em) {
+  .about__icon {
+    margin-bottom: 0.7rem;
+    font-size: 2.2rem;
+  }
 }
 .about__describe {
   max-width: 53.1rem;
@@ -416,6 +552,12 @@ h1 {
   font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .about__describe {
+    margin-top: 3rem;
+    text-align: center;
+  }
 }
 
 .experience__container {
@@ -427,6 +569,22 @@ h1 {
   max-width: 90%;
   min-height: 40rem;
 }
+@media only screen and (max-width: 75em) {
+  .experience__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .experience__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .experience__frontend, .experience__backend {
   background-color: transparent;
   border: 2px solid #2ee28e;
@@ -434,6 +592,19 @@ h1 {
   border-radius: 4rem;
   min-height: 30rem;
   min-width: 50rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .experience__frontend, .experience__backend {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .experience__frontend, .experience__backend {
+    border: none;
+    padding: 0;
+    display: grid;
+    place-items: center;
+  }
 }
 .experience__frontend h3, .experience__backend h3 {
   text-align: center;
@@ -445,7 +616,12 @@ h1 {
 .experience__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: flex-start;
+}
+@media only screen and (max-width: 37.5em) {
+  .experience__content {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
 }
 .experience__details {
   display: flex;
@@ -454,6 +630,12 @@ h1 {
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .experience__details {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }
 .experience__details h4 {
   font-size: 2rem;
@@ -512,6 +694,12 @@ h1 {
   flex-wrap: wrap;
   max-width: 100rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .projects__container {
+    gap: 2rem;
+    max-width: 100%;
+  }
+}
 .projects__card {
   background-color: rgba(34, 33, 33, 0.5568627451);
   padding: 1rem;
@@ -527,6 +715,14 @@ h1 {
   margin-top: 0.4rem;
   margin-bottom: 0.7rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .projects__img {
+    min-width: 25rem;
+    min-height: 15rem;
+    max-width: 25rem;
+    max-height: 15rem;
+  }
+}
 .projects__title {
   font-size: 2rem;
 }
@@ -534,7 +730,7 @@ h1 {
   padding-block: 1rem;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 1.2rem;
 }
 
@@ -550,18 +746,51 @@ h1 {
   margin-top: 3rem;
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 35% 60%;
   gap: 1%;
-  width: 70%;
+  width: 90%;
+  max-width: 116rem;
+}
+@media only screen and (max-width: 75em) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 }
 .contact__content {
   display: grid;
   place-items: center;
   margin-top: 2rem;
-  width: 100%;
+  width: 90%;
+  height: 100%;
+}
+@media only screen and (max-width: 56.25em) {
+  .contact__content {
+    width: 100%;
+    gap: 1rem;
+  }
 }
 .contact__info {
-  max-width: 50%;
+  display: grid;
+  place-items: flex-end;
+  width: 100%;
+}
+@media only screen and (max-width: 75em) {
+  .contact__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 90%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .contact__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
 }
 .contact__card {
   margin-top: 2rem;
@@ -577,6 +806,18 @@ h1 {
   padding-block: 2rem;
   padding-inline: 2rem;
   background-color: rgba(46, 226, 142, 0.699);
+  width: 65%;
+}
+@media only screen and (max-width: 75em) {
+  .contact__card {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .contact__card {
+    width: 30%;
+    max-width: 18rem;
+  }
 }
 .contact__card:hover {
   border: 1px solid #2ee28e;
@@ -586,23 +827,44 @@ h1 {
   font-size: 2.5rem;
   padding-block: 0.4rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .contact__card__title {
+    font-size: 2rem;
+  }
+}
 .contact__card__data {
   font-size: 1.4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .contact__card__data {
+    font-size: 1.2rem;
+  }
 }
 .contact__icon {
   font-size: 4rem;
   color: #ffffff;
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .contact__icon {
+    font-size: 3rem;
+  }
+}
 .contact__form {
   display: grid;
   place-items: start;
-  gap: 1.7rem;
-  width: 80%;
+  gap: 1.2rem;
+  width: 100%;
   padding-block: 5rem;
+  max-width: 70rem;
+}
+@media only screen and (max-width: 75em) {
+  .contact__form {
+    place-items: center;
+  }
 }
 .contact__form__input {
-  width: 90%;
+  width: 100%;
   border-radius: 1rem;
   background-color: transparent;
   border: 2px solid #2ee28e;
@@ -621,7 +883,7 @@ h1 {
   outline: 2px solid #2ee28e;
 }
 .contact__form__textarea {
-  width: 90%;
+  width: 100%;
   border-radius: 1rem;
   background-color: transparent;
   border: 2px solid #2ee28e;
@@ -644,7 +906,7 @@ h1 {
 #contact {
   display: grid;
   place-items: center;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 
 .footer {
@@ -667,7 +929,6 @@ h1 {
 @media only screen and (max-width: 75em) {
   .footer__content {
     padding-top: 1.5rem;
-    align-items: flex-start;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -685,7 +946,6 @@ h1 {
 }
 @media only screen and (max-width: 75em) {
   .footer__content > .footer__section {
-    align-items: flex-start;
     justify-content: center;
   }
 }
@@ -711,11 +971,6 @@ h1 {
   justify-content: center;
   list-style: none;
   padding: 0;
-}
-@media only screen and (max-width: 75em) {
-  .footer__content > .footer__section ul {
-    align-items: flex-start;
-  }
 }
 .footer__content > .footer__section ul li {
   margin-bottom: 5px;
@@ -793,6 +1048,12 @@ h1 {
   .footer__list {
     padding-top: 1rem;
     padding-inline: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__list {
+    width: 100%;
+    padding-bottom: 2rem;
   }
 }
 .footer__item {

@@ -1,6 +1,5 @@
 import React from 'react'
 import ME from "../../assets/me2color.png"
-import { PiProjectorScreenChart } from 'react-icons/pi'
 import { FaSketch,FaAward,FaFolderMinus} from "react-icons/fa";
 const About = () => {
     return (

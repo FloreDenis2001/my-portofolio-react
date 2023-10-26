@@ -37,6 +37,11 @@
         gap: 1rem;
         flex-wrap: wrap;
         max-width: 100rem;
+
+        @include respond(tab-port){
+            gap: 2rem;
+            max-width: 100%;
+        }
     }
 
     &__card {
@@ -44,6 +49,8 @@
         padding: 1rem;
         border-radius: 1rem;
         box-shadow: 0 0 0.3rem $color-white,0 0 .5rem $color-black;
+
+      
 
     }
 
@@ -55,6 +62,13 @@
         border-radius: 1rem;
         margin-top: 0.4rem;
         margin-bottom: 0.7rem;
+
+        @include respond(tab-port){
+            min-width: 25rem;
+            min-height: 15rem;
+            max-width: 25rem;
+            max-height: 15rem;
+        }
     }
 
     &__title {
@@ -65,7 +79,7 @@
         padding-block: 1rem;
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: flex-start;
         gap: 1.2rem;
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BiHomeAlt2 , BiSolidBookBookmark, BiUser, BiUserCircle} from 'react-icons/bi';
+import { BiHomeAlt2 , BiSolidBookBookmark, BiUser} from 'react-icons/bi';
 import {LuHeartHandshake} from 'react-icons/lu';
 import {RiContactsBookFill} from 'react-icons/ri';
 const NavigationBar = () => {

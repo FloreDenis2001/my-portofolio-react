@@ -4,7 +4,12 @@
     align-items: center;
     justify-content: space-around;
 
-    padding-block: 1rem;
+    padding-block: 3rem;
+
+    @include respond (tab-port){
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .nav {
@@ -17,6 +22,17 @@
         min-width: 30%;
         max-width: 50%;
         height: 100%;
+
+
+      
+    @include respond (tab-port){
+        min-width: 100%;
+        
+    }
+    @include respond (phone){
+        display: none;
+        
+    }
 
         &__list {
             display: flex;
@@ -42,6 +58,13 @@
         letter-spacing: 0.1rem;
         font-weight: 500;
         padding: 0 1rem;
+
+        @include respond(tab-land){
+            font-size: 1.6rem;
+        }
+        @include respond(tab-port){
+            font-size: 1.6rem;
+        }
     }
 
     &__link:before {
@@ -69,6 +92,14 @@
 .logo-container {
     width: 12rem;
     height: 80%;
+
+    @include respond(tab-land){
+        width: 10rem;
+    }
+    @include respond(tab-port){
+        padding-block: 3rem;
+        width: 10rem;
+    }
 }
 
 .logo-container img {

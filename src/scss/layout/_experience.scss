@@ -9,6 +9,21 @@
         max-width: 90%;
         min-height: 40rem;
 
+     
+        @include respond (tab-land){
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+        }
+
+        @include respond (tab-port){
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+        }
+
     }
 
     &__frontend,
@@ -20,8 +35,20 @@
         border-radius: 4rem;
         min-height: 30rem;
         min-width: 50rem;
+        @include respond (tab-port){
+            margin-bottom: 2rem;
+        }
 
-      
+
+        @include respond(phone){
+            border: none;
+            padding: 0;
+            display: grid;
+            place-items: center;
+           
+        }
+   
+
 
         h3 {
             text-align: center;
@@ -36,7 +63,11 @@
     &__content {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        place-items: flex-start;
+
+        @include respond(phone){
+            grid-template-columns: 1fr;
+            max-width: 90%;
+        }
     }
 
     &__details {
@@ -46,6 +77,10 @@
         justify-content: center;
         gap: 1rem;
         padding: 1rem;
+        @include respond (tab-port){
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
 
         h4 {
             font-size: 2rem;
