@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/my-portofolio-react/static/css/main.40525c72.css",
-    "main.js": "/my-portofolio-react/static/js/main.44f26081.js",
-    "static/media/notours.png": "/my-portofolio-react/static/media/notours.4a563da6dc2387d2d00e.png",
-    "static/media/nexter.png": "/my-portofolio-react/static/media/nexter.246ee352d44e783e45ae.png",
-    "static/media/ecom.png": "/my-portofolio-react/static/media/ecom.b5d016556c607a6a16b0.png",
-    "static/media/cv.pdf": "/my-portofolio-react/static/media/cv.753a950d6da4d1bee0bc.pdf",
-    "static/media/viralvortex.png": "/my-portofolio-react/static/media/viralvortex.708740018f334d071646.png",
-    "static/media/trillo.png": "/my-portofolio-react/static/media/trillo.6f6b4ec5681dd01f1491.png",
-    "static/media/me2color.png": "/my-portofolio-react/static/media/me2color.3917f60a7d9d5014f4fe.png",
-    "static/media/me2.png": "/my-portofolio-react/static/media/me2.18e41ac9603243b5f70e.png",
-    "static/media/logo.svg": "/my-portofolio-react/static/media/logo.c16de436827f4e8e08c0f4b9f511f284.svg",
-    "static/media/logowhite.svg": "/my-portofolio-react/static/media/logowhite.1ad7b85578333ac45266ab114ebe77aa.svg",
-    "index.html": "/my-portofolio-react/index.html",
-    "main.40525c72.css.map": "/my-portofolio-react/static/css/main.40525c72.css.map",
-    "main.44f26081.js.map": "/my-portofolio-react/static/js/main.44f26081.js.map"
+    "main.css": "/static/css/main.40525c72.css",
+    "main.js": "/static/js/main.4ded9b35.js",
+    "static/media/notours.png": "/static/media/notours.4a563da6dc2387d2d00e.png",
+    "static/media/nexter.png": "/static/media/nexter.246ee352d44e783e45ae.png",
+    "static/media/ecom.png": "/static/media/ecom.b5d016556c607a6a16b0.png",
+    "static/media/cv.pdf": "/static/media/cv.753a950d6da4d1bee0bc.pdf",
+    "static/media/viralvortex.png": "/static/media/viralvortex.708740018f334d071646.png",
+    "static/media/trillo.png": "/static/media/trillo.6f6b4ec5681dd01f1491.png",
+    "static/media/me2color.png": "/static/media/me2color.3917f60a7d9d5014f4fe.png",
+    "static/media/me2.png": "/static/media/me2.18e41ac9603243b5f70e.png",
+    "static/media/logo.svg": "/static/media/logo.c16de436827f4e8e08c0f4b9f511f284.svg",
+    "static/media/logowhite.svg": "/static/media/logowhite.1ad7b85578333ac45266ab114ebe77aa.svg",
+    "index.html": "/index.html",
+    "main.40525c72.css.map": "/static/css/main.40525c72.css.map",
+    "main.4ded9b35.js.map": "/static/js/main.4ded9b35.js.map"
   },
   "entrypoints": [
     "static/css/main.40525c72.css",
-    "static/js/main.44f26081.js"
+    "static/js/main.4ded9b35.js"
   ]
 }
