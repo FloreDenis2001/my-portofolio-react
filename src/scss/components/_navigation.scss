@@ -108,6 +108,16 @@
 }
 
 .navigation {
+
+    
+    &__active {
+        font-size: 2.2rem;
+        color: $color-first;
+        border-radius: 50%;
+        padding: 0.7rem 0.7rem 0 0.7rem;
+        background-color: rgba(36, 36, 36, 0.877);
+    }
+    
     &__mobile {
         
         display: flex;
@@ -149,13 +159,7 @@
            
             padding: 0.6rem 0.6rem 0 0.6rem;
 
-            &__active {
-                font-size: 2.2rem;
-                color: $color-first;
-                border-radius: 50%;
-                padding: 0.7rem 0.7rem 0 0.7rem;
-                background-color: rgba(36, 36, 36, 0.877);
-            }
+        
 
             &:hover{
                 padding: 0.7rem 0.7rem 0 0.7rem;
@@ -165,6 +169,7 @@
 
 
         }
+
 
         &__link svg {
 

@@ -160,6 +160,13 @@ h1 {
   min-height: 100%;
 }
 
+.navigation__active {
+  font-size: 2.2rem;
+  color: #2ee28e;
+  border-radius: 50%;
+  padding: 0.7rem 0.7rem 0 0.7rem;
+  background-color: rgba(36, 36, 36, 0.877);
+}
 .navigation__mobile {
   display: flex;
   align-items: center;
@@ -193,13 +200,6 @@ h1 {
   transition: all 0.2s;
   border-radius: 50%;
   padding: 0.6rem 0.6rem 0 0.6rem;
-}
-.navigation__mobile__link__active {
-  font-size: 2.2rem;
-  color: #2ee28e;
-  border-radius: 50%;
-  padding: 0.7rem 0.7rem 0 0.7rem;
-  background-color: rgba(36, 36, 36, 0.877);
 }
 .navigation__mobile__link:hover {
   padding: 0.7rem 0.7rem 0 0.7rem;
