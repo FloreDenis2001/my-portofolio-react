@@ -20,8 +20,12 @@ body {
     font-family: $font-family-one;
     font-weight: 400;
     overflow-x: hidden;
-    height: auto;
+    width: 100%;
     color: $color-white;
+}
+
+#root{
+    overflow-x: hidden;
 }
 
 img {
