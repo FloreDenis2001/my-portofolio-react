@@ -25,7 +25,7 @@ const NavigationBar = () => {
         </li>
 
         <li>
-            <a href="#contact" className="navigation__mobile__link">
+            <a href="#contact"  onClick={()=>setActiveNav('#contact')} className={activeNav === "#contact" ? "navigation__mobile__link navigation__active" : 'navigation__mobile__link'} >
             <RiContactsBookFill/>
             </a>
         </li>
