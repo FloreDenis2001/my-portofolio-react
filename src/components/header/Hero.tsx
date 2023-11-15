@@ -1,6 +1,6 @@
 import React from 'react'
 import ButtonContainer from './ButtonContainer'
-import ME from "../../assets/me2.png"
+import ME from "../../assets/med.png"
 import HeaderSocial from './HeaderSocial'
 
 const Hero = () => {

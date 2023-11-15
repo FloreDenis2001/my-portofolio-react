@@ -44,15 +44,15 @@ const Contact = () => {
 
 
                     <form  method="POST" className="contact__form"  action="https://formsubmit.co/floredenis907@gmail.com" >
-                        <input className="contact__form__input" type="text" id="first-name" name="name" placeholder="Nume" required />
+                        <input className="contact__form__input" type="text" id="first-name" name="name" placeholder="Name" required />
 
                         <input className="contact__form__input " type="text" id="email" name="email" placeholder="Email" required />
 
-                        <input className="contact__form__input" type="tel" id="phone" name="phone" placeholder="Telefon" required />
+                        <input className="contact__form__input" type="tel" id="phone" name="phone" placeholder="Phone" required />
 
                         <input type="hidden" id="_subject" name="_subject" value="New email from a client" required />
 
-                        <textarea className="contact__form__textarea" name="message" id="message" placeholder="Mesajul tau" required></textarea>
+                        <textarea className="contact__form__textarea" name="message" id="message" placeholder="Your Message" required></textarea>
 
                         <button type="submit" className="btn btn__primary">Send Message</button>
                     </form>

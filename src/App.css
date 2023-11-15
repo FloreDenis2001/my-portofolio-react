@@ -456,7 +456,7 @@ h1 {
   display: grid;
   place-items: center;
   max-width: 50rem;
-  max-height: 50rem;
+  max-height: 40rem;
 }
 @media only screen and (max-width: 56.25em) {
   .about__me {
@@ -480,7 +480,7 @@ h1 {
 }
 .about__me__img:hover {
   transform: rotate(0);
-  box-shadow: 0 0 1rem #2ee28e, 0 0 1.5rem #73d6a8;
+  box-shadow: 0 0 1rem #2ee28e, 0 0 0.5rem #73d6a8;
 }
 .about__me__img img {
   border-radius: 5rem;

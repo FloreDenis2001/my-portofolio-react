@@ -41,7 +41,7 @@ const About = () => {
 
 
                     <p className="about__describe">
-                        I am Flore Denis, a web programmer with over one year of professional experience. My area of expertise lies in the development
+                        I am Flore Denis, a web programmer with 2 years of professional experience. My area of expertise lies in the development
                         of innovative and user-centric web applications. I employ a range of technologies and frameworks, including HTML, CSS, JavaScript,
                         and React, to craft web solutions that meet the highest standards of quality. In addition to front-end development,
                         I am proficient in building dynamic and high-performing web applications using Spring Boot, Bootstrap, and Java.

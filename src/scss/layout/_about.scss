@@ -53,7 +53,7 @@
         display: grid;
         place-items: center;
         max-width: 50rem;
-        max-height: 50rem;
+        max-height: 40rem;
 
 
         @include respond (tab-port){
@@ -75,7 +75,7 @@
 
             &:hover {
                 transform: rotate(0);
-                box-shadow: 0 0 1rem $color-first, 0 0 1.5rem $color-second;
+                box-shadow: 0 0 1rem $color-first, 0 0 .5rem $color-second;
 
             }
 

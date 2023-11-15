@@ -16,14 +16,12 @@ const Experience = () => {
                             <FaSketch className='experience__icon' />
                             <div>
                                 <h4>HTML</h4>
-                                <small>Experienced</small>
                             </div>
 
                         </article>
                         <article className='experience__details'>
                             <FaSketch className='experience__icon' />
                             <div><h4>CSS</h4>
-                                <small>Intermediate</small>
                             </div>
 
 
@@ -31,7 +29,6 @@ const Experience = () => {
                         <article className='experience__details'>
                             <FaSketch className='experience__icon' />
                             <div>  <h4>JavaScript</h4>
-                                <small>Intermediate</small>
                             </div>
 
 
@@ -39,7 +36,6 @@ const Experience = () => {
                         <article className='experience__details'>
                             <FaSketch className='experience__icon' />
                             <div>   <h4>React</h4>
-                                <small>Intermediate</small>
                             </div>
 
 
@@ -47,7 +43,6 @@ const Experience = () => {
                         <article className='experience__details'>
                             <FaSketch className='experience__icon' />
                             <div>  <h4>Sass</h4>
-                                <small>Advanced</small>
                             </div>
 
 
@@ -55,7 +50,6 @@ const Experience = () => {
                         <article className='experience__details'>
                             <FaSketch className='experience__icon' />
                             <div> <h4>TypeScript</h4>
-                                <small>Intermediate</small>
                             </div>
 
                         </article>
@@ -67,7 +61,6 @@ const Experience = () => {
                         <article className='experience__details'>
                             <FaSketch className='experience__icon' />
                             <div>   <h4>Java</h4>
-                                <small>Intermediate</small>
 
                             </div>
 
@@ -76,7 +69,6 @@ const Experience = () => {
                         <article className='experience__details'>
                             <FaSketch className='experience__icon' />
                             <div>      <h4>MySQL</h4>
-                                <small>Intermediate</small>
 
                             </div>
 
@@ -87,7 +79,6 @@ const Experience = () => {
                             <div>
 
                                 <h4>C++</h4>
-                                <small>Basic</small>
 
 
                             </div>
@@ -97,7 +88,7 @@ const Experience = () => {
                         <article className='experience__details'>
                             <FaSketch className='experience__icon' />
                             <div>      <h4>C</h4>
-                                <small>basic</small></div>
+                                </div>
 
                         </article>
                     </div>
