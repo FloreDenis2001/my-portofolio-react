@@ -3,6 +3,7 @@ import ECOM from '../../assets/ecom.png';
 import NOTOURS from '../../assets/notours.png';
 import NEXTER from '../../assets/nexter.png';
 import TRILLO from '../../assets/trillo.png';
+import TICTACTOE from '../../assets/TicTac.png'
 import VORTEX from '../../assets/viralvortex.png';
 import { BsGithub } from 'react-icons/bs';
 import { FiAirplay } from 'react-icons/fi';
@@ -45,6 +46,14 @@ const Projects = () => {
       category: 'Design',
       git:'https://github.com/FloreDenis2001/nexter',
       demo:'https://floredenis.com/nexter/',
+    },
+
+    {
+      title: 'Tic Tac Toe Game',
+      image: TICTACTOE,
+      category: 'Design',
+      git:'https://github.com/FloreDenis2001/tic-tac-toe-app',
+      demo:'https://floredenis.com/tic-tac-toe-app/',
     },
   ];
 
