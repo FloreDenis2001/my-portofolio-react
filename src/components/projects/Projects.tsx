@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import ECOM from '../../assets/ecom.png';
 import NOTOURS from '../../assets/notours.png';
 import NEXTER from '../../assets/nexter.png';
 import TRILLO from '../../assets/trillo.png';
 import TICTACTOE from '../../assets/TicTac.png'
-import VORTEX from '../../assets/viralvortex.png';
+import SALON from '../../assets/salon.png';
+import RPS from '../../assets/rps.png';
+import TECNOS from '../../assets/tecnos.png';
 import { BsGithub } from 'react-icons/bs';
 import { FiAirplay } from 'react-icons/fi';
 
@@ -13,11 +14,18 @@ const Projects = () => {
 
   const projectData = [
     {
-      title: 'Ecommerce App',
-      image: ECOM,
-      category: 'Web',
-      git:'https://github.com/FloreDenis2001/evomarket-client-react',
-      demo:'',
+      title: 'Beauty Salon Design',
+      image: SALON,
+      category: 'Design',
+      git:'https://github.com/FloreDenis2001/beauty-mockup',
+      demo:'https://floredenis.com/beauty-mockup/',
+    },
+    {
+      title: 'RPS Design',
+      image: RPS,
+      category: 'Design',
+      git:'https://github.com/FloreDenis2001/rps_mockup_client/',
+      demo:'https://floredenis.com/rps_mockup_client/',
     },
     {
       title: 'Natours Design',
@@ -27,12 +35,13 @@ const Projects = () => {
       demo:'https://floredenis.com/natours-website-with-scss/',
     },
     {
-      title: 'ViralVortex Design',
-      image: VORTEX,
+      title: 'Tecnos Design',
+      image: TECNOS,
       category: 'Design',
-      git:'https://github.com/FloreDenis2001/viralvortex-theme',
-      demo:'https://floredenis.com/viralvortex-theme/',
+      git:'https://github.com/FloreDenis2001/tecnos-mockup',
+      demo:'https://floredenis.com/tecnos-mockup/',
     },
+  
     {
       title: 'Trillo Design',
       image: TRILLO,

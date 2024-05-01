@@ -1,5 +1,5 @@
 import React from 'react'
-import cv from '../../assets/cvupdate.pdf'
+import cv from '../../assets/mycv.pdf'
 const ButtonContainer = () => {
   return (
     <div className='btn__container'>
