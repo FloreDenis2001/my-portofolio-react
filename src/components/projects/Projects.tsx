@@ -18,28 +18,28 @@ const Projects = () => {
       image: SALON,
       category: 'Design',
       git:'https://github.com/FloreDenis2001/beauty-mockup',
-      demo:'https://floredenis.com/beauty-mockup/',
+      demo:'https://denisflore.com/beauty-mockup/',
     },
     {
       title: 'RPS Design',
       image: RPS,
       category: 'Design',
       git:'https://github.com/FloreDenis2001/rps_mockup_client/',
-      demo:'https://floredenis.com/rps_mockup_client/',
+      demo:'https://denisflore.com/rps_mockup_client/',
     },
     {
       title: 'Natours Design',
       image: NOTOURS,
       category: 'Design',
       git:'https://github.com/FloreDenis2001/natours-website-with-scss',
-      demo:'https://floredenis.com/natours-website-with-scss/',
+      demo:'https://denisflore.com/natours-website-with-scss/',
     },
     {
       title: 'Tecnos Design',
       image: TECNOS,
       category: 'Design',
       git:'https://github.com/FloreDenis2001/tecnos-mockup',
-      demo:'https://floredenis.com/tecnos-mockup/',
+      demo:'https://denisflore.com/tecnos-mockup/',
     },
   
     {
@@ -47,14 +47,14 @@ const Projects = () => {
       image: TRILLO,
       category: 'Design',
       git:'https://github.com/FloreDenis2001/trillo/',
-      demo:'https://floredenis.com/trillo/',
+      demo:'https://denisflore.com/trillo/',
     },
     {
       title: 'Nexter Design',
       image: NEXTER,
       category: 'Design',
       git:'https://github.com/FloreDenis2001/nexter',
-      demo:'https://floredenis.com/nexter/',
+      demo:'https://denisflore.com/nexter/',
     },
 
     {
@@ -62,7 +62,7 @@ const Projects = () => {
       image: TICTACTOE,
       category: 'Design',
       git:'https://github.com/FloreDenis2001/tic-tac-toe-app',
-      demo:'https://floredenis.com/tic-tac-toe-app/',
+      demo:'https://denisflore.com/tic-tac-toe-app/',
     },
   ];
 
