@@ -6,6 +6,7 @@ import TICTACTOE from '../../assets/TicTac.png'
 import SALON from '../../assets/salon.png';
 import RPS from '../../assets/rps.png';
 import TECNOS from '../../assets/tecnos.png';
+import AZONTO from '../../assets/azonto.png';
 import { BsGithub } from 'react-icons/bs';
 import { FiAirplay } from 'react-icons/fi';
 
@@ -13,6 +14,13 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
   const projectData = [
+    {
+      title: 'Azonto Studio',
+      image: AZONTO,
+      category: 'Design',
+      git:'https://github.com/FloreDenis2001/azonto-photo-portal',
+      demo:'https://azonto-studio.com/',
+    },
     {
       title: 'Beauty Salon Design',
       image: SALON,
